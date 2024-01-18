@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    height: 100vh;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F4F6F7;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+   
+}
+header img{
+    height: 50px;        
+}
+.monExperience{
+    display: flex;
+    gap: .5rem;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    position: relative;
+    font-size: calc(22px + 0.5vw);
+    color: #E67E22;
+    
+}
+.text.premier-text{
+    color: #566573;
+}
+.text.seconde-text::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #F4F6F7;
+    height: calc(22px + 0.5vw);
+    width: 100%;
+    border-left: 9px solid #E67E22;
+    border-radius: 5px;
+    animation: anime 3s steps(12) infinite;
+}
+@keyframes anime {   
+    30%,50%{
+        left: 100%;
+    } 
+      
+    100%{
+        left: 0%;
+    } 
+}
